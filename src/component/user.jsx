@@ -43,10 +43,10 @@ const User = (props) => {
             console.log(name, email, phone, address);
             alert("Congratulation, You have listed up!");
         }
-        setname('')
-        setemail('')
-        setphone('')
-        setaddress('')
+        document.getElementById("name").value=" ";
+        document.getElementById("email").value=" ";
+        document.getElementById("phone").value=" ";
+        document.getElementById("address").value=" ";
           
     }
     useEffect(() => {
@@ -82,6 +82,7 @@ const User = (props) => {
                     NAME
                   </InputLabel>
                   <Input
+                  id="name"
                   name="name"
                   type="text"
                   className={classes.inputs}
@@ -95,6 +96,7 @@ const User = (props) => {
                     E-Mail
                   </InputLabel>
                   <Input
+                  id="email"
                   name="email"
                   type="email"
                   className={classes.inputs}
@@ -108,6 +110,7 @@ const User = (props) => {
                 NUMBER
               </InputLabel>
               <Input
+              id="phone"
                 name="phone"
                 type="number"
                 className={classes.inputs}
@@ -120,6 +123,7 @@ const User = (props) => {
                 ADDRESS
               </InputLabel>
               <Input
+              id="address"
                 name="address"
                 type="text"
                 className={classes.inputs}
